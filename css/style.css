@@ -538,3 +538,7 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -63,3 +63,52 @@
     
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section, div[id]");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  function onScroll() {
+    let currentSectionId = "";
+    const scrollPosition = window.scrollY + 100;
+
+    sections.forEach((section) => {
+      const offsetTop = section.offsetTop;
+      const offsetHeight = section.offsetHeight;
+
+      if (
+        scrollPosition >= offsetTop &&
+        scrollPosition < offsetTop + offsetHeight
+      ) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSectionId}`) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  // 🔁 Interceptar clics para hacer scroll sin fragmento
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // ❗️Evitar que el navegador cambie la URL
+
+      const targetId = this.getAttribute("href").substring(1); // quitar "#"
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // ❌ Asegurarse de que no aparezca el hash
+        history.replaceState(null, null, location.pathname + location.search);
+      }
+    });
+  });
+
+  window.addEventListener("scroll", onScroll);
+});
+
+
