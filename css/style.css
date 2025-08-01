@@ -542,3 +542,52 @@ h6,
 html {
   scroll-behavior: smooth;
 }
+
+.benefits-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .benefits-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #1a202c;
+    }
+    .benefits-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .benefit-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .benefit-icon {
+      font-size: 40px;
+      color: #1e40af;
+      margin-bottom: 15px;
+    }
+    .benefit-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #1a202c;
+    }
+    .benefit-text {
+      font-size: 0.95rem;
+      color: #666;
+    }

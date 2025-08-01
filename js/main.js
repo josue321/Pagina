@@ -91,18 +91,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 🔁 Interceptar clics para hacer scroll sin fragmento
+  
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault(); // ❗️Evitar que el navegador cambie la URL
+      e.preventDefault(); // Evitar que el navegador cambie la URL
 
-      const targetId = this.getAttribute("href").substring(1); // quitar "#"
+      const targetId = this.getAttribute("href").substring(1); // Borra "#"
       const target = document.getElementById(targetId);
 
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
 
-        // ❌ Asegurarse de que no aparezca el hash
+        // Asegurarse de que no aparezca a principio
         history.replaceState(null, null, location.pathname + location.search);
       }
     });
