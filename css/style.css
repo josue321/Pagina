@@ -550,32 +550,37 @@ html {
   gap: 20px; /* Espacio entre texto y carrusel */
   max-width: 900px; /* Para limitar el ancho total, opcional */
   margin: 0 auto; /* Centrar el contenedor en la página */
-  padding: 20px;
+  
 }
 
 .clientes-texto {
   font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap; /* Para que el texto no se divida en varias líneas */
+  color: #1363C6;
+
+  
 }
 
 /* Tu CSS original para .mySwiper y .swiper-slide queda igual */
 .mySwiper {
   padding: 20px 0;
-  background: white;
+  background: rgb(255, 255, 255);
+
+  
 }
 
 .swiper-slide {
-  width: 50px; /* ancho fijo para cada slide */
+  width: 130px; /* ancho fijo para cada slide */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .swiper-slide img {
-  width: 100px;    /* ancho fijo */
-  height: 60px;    /* alto fijo */
+  width: 110px;    /* ancho fijo */
+  height: 80px;    /* alto fijo */
   object-fit: contain;
-  display: block;  /* elimina espacio debajo de la imagen */
+  display: block;  /* elimina espacio debajo de la imagen */  
 }
 

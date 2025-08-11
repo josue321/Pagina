@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4, // Cuántos logos se ven a la vez
-  spaceBetween: 10, // Espacio entre logos
+  spaceBetween: 30, // Espacio entre logos
   loop: true,       // Repetición infinita
   autoplay: {
     delay: 0,       // Sin pausa entre cambios
