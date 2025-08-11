@@ -111,4 +111,18 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", onScroll);
 });
 
-
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4, // Cuántos logos se ven a la vez
+  spaceBetween: 10, // Espacio entre logos
+  loop: true,       // Repetición infinita
+  autoplay: {
+    delay: 0,       // Sin pausa entre cambios
+    disableOnInteraction: false,
+  },
+  speed: 3000,      // Velocidad de desplazamiento
+  breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 20 },
+    768: { slidesPerView: 3, spaceBetween: 25 },
+    1024: { slidesPerView: 5, spaceBetween: 30 },
+  }
+});
