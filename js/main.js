@@ -125,7 +125,7 @@ const swiper = new Swiper(".mySwiper", {
     enabled: true,
     sticky: false,
   },
-  loopedSlides: 10, // Ajusta según la cantidad de logos disponibles
+  loopedSlides: 9, // Ajusta según la cantidad de logos disponibles
   breakpoints: {
     320: { slidesPerView: 2, spaceBetween: 20 },
     768: { slidesPerView: 3, spaceBetween: 25 },
