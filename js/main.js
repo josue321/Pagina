@@ -112,17 +112,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4, // Cuántos logos se ven a la vez
-  spaceBetween: 30, // Espacio entre logos
-  loop: true,       // Repetición infinita
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  freeMode: true,
+  speed: 2000,
   autoplay: {
-    delay: 0,       // Sin pausa entre cambios
+    delay: 0,
     disableOnInteraction: false,
   },
-  speed: 3000,      // Velocidad de desplazamiento
+  freeMode: {
+    enabled: true,
+    sticky: false,
+  },
+  loopedSlides: 10, // Ajusta según la cantidad de logos disponibles
   breakpoints: {
     320: { slidesPerView: 2, spaceBetween: 20 },
     768: { slidesPerView: 3, spaceBetween: 25 },
     1024: { slidesPerView: 5, spaceBetween: 30 },
   }
 });
+

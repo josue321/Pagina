@@ -597,3 +597,7 @@ html {
         font-size:30px;
         z-index:100;
     }
+    
+.mySwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
