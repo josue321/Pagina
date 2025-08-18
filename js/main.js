@@ -50,10 +50,7 @@
     dots: true,
     loop: true,
     nav: true,
-    navText: [
-      '<i class="bi bi-chevron-left"></i>',
-      '<i class="bi bi-chevron-right"></i>',
-    ],
+    navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
   });
 })(jQuery);
 
@@ -69,14 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const offsetTop = section.offsetTop;
       const offsetHeight = section.offsetHeight;
 
-      if (
-        scrollPosition >= offsetTop &&
-        scrollPosition < offsetTop + offsetHeight
-      ) {
+      if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
         currentSectionId = section.getAttribute("id");
       }
     });
-
     navLinks.forEach((link) => {
       link.classList.remove("active");
       if (link.getAttribute("href") === `#${currentSectionId}`) {
@@ -87,21 +80,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault(); // Evitar que el navegador cambie la URL
-
-      const targetId = this.getAttribute("href").substring(1); // Borra "#"
-      const target = document.getElementById(targetId);
-
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-
-        // Asegurarse de que no aparezca a principio
-        history.replaceState(null, null, location.pathname + location.search);
+      //Solo prevenir comportamiento en enlaces internos
+      if (this.getAttribute("href").startsWith("#")) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, null, location.pathname + location.search);
+        }
+      } else {
       }
     });
   });
 
   window.addEventListener("scroll", onScroll);
+  onScroll(); // Inicializar estado activo
 });
 
 const swiper = new Swiper(".mySwiper", {
