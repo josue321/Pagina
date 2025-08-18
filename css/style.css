@@ -93,8 +93,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
-    0 0 15px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .navbar .dropdown-toggle::after {
@@ -846,22 +845,8 @@ html {
   transition-delay: 0.9s;
 }
 
-/* Mejorar la apariencia del quinto servicio centrado */
-@media (min-width: 768px) {
-  #servicios .row > div:last-child {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  #servicios .row > div:last-child .service-3d-container {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 /* Ajustes responsivos */
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .service-3d-container {
     height: 350px;
   }
@@ -875,6 +860,36 @@ html {
     height: 60px;
     font-size: 24px;
   }
+}
+
+@media (max-width: 767.98px) {
+  .service-3d-container {
+    height: 330px;
+  }
+}
+
+/* Estilos específicos para centrar las últimas dos tarjetas */
+.centered-row {
+  justify-content: center !important;
+}
+
+.centered-item {
+  max-width: 33.333% !important;
+  flex: 0 0 33.333% !important;
+}
+
+.flip-hint {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.card-back .flip-hint {
+  color: white;
 }
 
 /*homologacion*/
