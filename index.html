@@ -27,17 +27,7 @@
   </head>
 
   <body>
-    <!-- Carga Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Carga End -->
-
+    <!-- Top Bar Start -->
     <div class="top-bar" id="topBar">
       <div class="container top-bar-content">
         <div class="top-bar-info">
@@ -52,6 +42,7 @@
         </div>
       </div>
     </div>
+    <!-- Top Bar End -->
 
     <!-- Cabezera Start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -88,42 +79,34 @@
     </nav>
     <!-- Cabezera End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5"></div>
-        </div>
-      </div>
-    </div>
-    <!-- Hero End -->
-
     <!-- Nosotros Start -->
-    <div class="container-fluid py-5" id="nosotros">
+    <div class="container-fluid py-5" id="nosotros" style="background: url(img/nosotros.png)">
       <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="about-img">
-              <img class="img-fluid" src="img/about-img.jpg" />
-            </div>
-          </div>
+        <div class="g-5 align-items-center">
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="mb-4">Tu empresa a tu manera con las mejores soluciones</h1>
-            <p class="mb-4">
+            <h1 class="mb-4" style="color: white">Tu empresa a tu manera con las mejores soluciones</h1>
+            <p class="mb-4" style="color: white">
               Somos L&S TECH SOLUTIONS E.I.R.L. empresa dedicada al rubro Tecnológico e Informático, contamos
               con personal calificado para todo tipo de requerimientos, así mismo con productos originales y
               de alta calidad, todos nuestros productos y servicios cuenta con un alto índice de valor
               agregado.
             </p>
-
             <div class="row g-3">
               <div class="col-sm-6">
-                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Personal Profesional</h6>
-                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Atencion Personalizada</h6>
+                <h6 class="mb-3" style="color: white">
+                  <i class="fa fa-check text-primary me-2"></i>Personal Profesional
+                </h6>
+                <h6 class="mb-0" style="color: white">
+                  <i class="fa fa-check text-primary me-2"></i>Atencion Personalizada
+                </h6>
               </div>
               <div class="col-sm-6">
-                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Soluciones Integrales</h6>
-                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Planes de soporte flexibles</h6>
+                <h6 class="mb-3" style="color: white">
+                  <i class="fa fa-check text-primary me-2"></i>Soluciones Integrales
+                </h6>
+                <h6 class="mb-0" style="color: white">
+                  <i class="fa fa-check text-primary me-2"></i>Planes de soporte flexibles
+                </h6>
               </div>
             </div>
           </div>
@@ -133,7 +116,7 @@
     <!-- Nosotros End -->
 
     <!-- Servicios Start -->
-    <div class="container-fluid bg-light py-4" id="servicios">
+    <div class="container-fluid py-4" id="servicios">
       <div class="container">
         <h1 class="mb-4 text-center">Nuestros Servicios</h1>
         <!-- Primera fila con 3 servicios -->
@@ -355,7 +338,7 @@
     <!-- Homologacion End -->
 
     <!-- carrusel CLientes inicio-->
-    <div class="container-fluid bg-light espacio" id="clientes">
+    <div class="container-fluid espacio" id="clientes" style="background-color: #4a6ba3">
       <div class="container">
         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px">
           <h1>Nuestros clientes</h1>
@@ -380,7 +363,7 @@
     <!-- carrusel CLientes final-->
 
     <!-- Proyectos Start -->
-    <div class="container-fluid bg-light espacio" id="proyectos">
+    <div class="container-fluid espacio" id="proyectos" style="background-color: #4a6ba3">
       <div class="container espacio">
         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px">
           <h1 class="mb-4">Nuestros casos de exito</h1>
@@ -424,7 +407,10 @@
     <!-- Proyectos End -->
 
     <!-- carrusel Socios inicio-->
-    <div class="container-fluid bg-light espacio2" style="padding-left: 0; padding-right: 0">
+    <div
+      class="container-fluid espacio2"
+      style="padding-left: 0; padding-right: 0; background-color: #4a6ba3"
+    >
       <div class="container">
         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px">
           <h1>Nuestros Socios</h1>
