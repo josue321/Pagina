@@ -120,7 +120,7 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-/* Pare redirigir en imagen que da la buelta*/
+/* Para redirigir en imagen que da la vuelta*/
 document.querySelectorAll(".flip-container").forEach((card) => {
   card.addEventListener("click", function () {
     const url = this.getAttribute("data-url");
