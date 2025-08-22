@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   onScroll(); // Inicializar estado activo
 });
 
+/*Carrusel*/
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -96,7 +97,7 @@ document.querySelectorAll(".flip-container").forEach((card) => {
   });
 });
 
-// JavaScript para manejar la barra superior
+// Para manejar la barra superior
 let lastScrollTop = 0;
 const topBar = document.getElementById("topBar");
 const navbar = document.querySelector(".navbar");
@@ -136,4 +137,20 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
+});
+
+//transparencia solo en index
+document.addEventListener("DOMContentLoaded", function () {
+  // Verificamos si estamos en index.html o en la raíz
+  if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        navbar.classList.remove("navbar-transparent");
+      } else {
+        navbar.classList.add("navbar-transparent");
+      }
+    });
+  }
 });
