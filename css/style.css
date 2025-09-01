@@ -345,12 +345,12 @@ html {
 .service-3d-container {
   perspective: 1500px;
   margin-bottom: 30px;
-  height: 380px; /* Altura fija para todas las tarjetas */
+  height: 430px; /* Altura fija para todas las tarjetas */
 }
 
 .service-card {
   position: relative;
-  width: 100%;
+  width: 98%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
