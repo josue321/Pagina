@@ -219,15 +219,6 @@ html {
   transition-timing-function: linear !important;
 }
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
-  width: 100%;
-}
-
 /* Contenedor de la tarjeta volteable */
 .flip-container {
   width: 100%;
@@ -548,6 +539,9 @@ html {
 }
 .service-5 .card-front {
   background-image: url("../img/5.png");
+}
+.service-6 .card-front {
+  background-image: url("../img/6.png");
 }
 /*homologacion*/
 .vertical-center {
@@ -1121,14 +1115,20 @@ html {
 
 /*Mision y vision*/
 .mision-vision {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to bottom, #c2c6ccd0, #ffffff);
 }
 
 .mision-vision h1 {
   text-align: center;
-  margin-bottom: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   color: #2c3e50;
   font-size: 2.5rem;
   position: relative;
@@ -1147,9 +1147,10 @@ html {
 }
 
 .block {
+  max-width: 1200px;
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -1163,12 +1164,12 @@ html {
 
 .image-content {
   flex: 1;
-  height: 400px;
+  padding-left: 40px;
   overflow: hidden;
 }
 
 .image-content img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
