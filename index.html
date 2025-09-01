@@ -56,7 +56,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#nosotros">Nosotros</a>
+              <a class="nav-link" href="Nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#servicios">Servicios</a>
@@ -79,90 +79,107 @@
     </nav>
     <!-- Cabezera End -->
 
-    <!-- Nosotros Start -->
-    <div class="container-fluid py-5" id="nosotros">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="mb-4 text-white">Tu empresa a tu manera con las mejores soluciones</h1>
-            <p class="mb-4 text-white">
-              Somos L&S TECH SOLUTIONS E.I.R.L. empresa dedicada al rubro Tecnológico e Informático, contamos
-              con personal calificado para todo tipo de requerimientos, así mismo con productos originales y
-              de alta calidad, todos nuestros productos y servicios cuenta con un alto índice de valor
-              agregado.
-            </p>
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <h6 class="mb-3 text-white">
-                  <i class="fa fa-check text-primary me-2"></i>Personal Profesional
-                </h6>
-                <h6 class="mb-0 text-white">
-                  <i class="fa fa-check text-primary me-2"></i>Atencion Personalizada
-                </h6>
+    <!-- Carrusel de Inicio -->
+    <div id="inicioCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#inicioCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#inicioCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#inicioCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Contenido del carrusel -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
+          "
+        >
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 text-white">Soluciones Tecnológicas a tu medida</h1>
+                <p class="lead text-white">
+                  Desarrollamos software personalizado para optimizar tus procesos empresariales.
+                </p>
               </div>
-              <div class="col-sm-6">
-                <h6 class="mb-3 text-white">
-                  <i class="fa fa-check text-primary me-2"></i>Soluciones Integrales
-                </h6>
-                <h6 class="mb-0 text-white">
-                  <i class="fa fa-check text-primary me-2"></i>Planes de soporte flexibles
-                </h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
+          "
+        >
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 text-white">Desarrollo Web y Móvil</h1>
+                <p class="lead text-white">
+                  Creamos aplicaciones modernas y responsivas para todos los dispositivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('img/nosotros.png')">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 text-white">Infraestructura Cloud</h1>
+                <p class="lead text-white">
+                  Implementamos soluciones en la nube para mayor escalabilidad y seguridad.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Controles de navegación -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#inicioCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#inicioCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-    <!-- Nosotros End -->
-
-    <!-- Mision y vision Start -->
-    <section class="mision-vision">
-      <h1>Nuestra Empresa</h1>
-      <div class="block mision">
-        <div class="text-content">
-          <h2>Misión</h2>
-          <p>
-            Contribuir al crecimiento y desarrollo sostenible de nuestros clientes mediante la implementación
-            de soluciones tecnológicas integrales, innovadoras y seguras, orientadas a optimizar su
-            productividad y eficiencia operativa.
-          </p>
-          <p>
-            Nos comprometemos a comprender sus necesidades específicas para ofrecer un servicio de alto valor,
-            que no solo impulse su competitividad en el mercado, sino que también promueva relaciones sólidas,
-            de confianza y de largo plazo.
-          </p>
-        </div>
-        <div class="image-content">
-          <img
-            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            alt="Nuestra misión"
-          />
-        </div>
-      </div>
-
-      <div class="block vision">
-        <div class="text-content">
-          <h2>Visión</h2>
-          <p>
-            Consolidarnos como la empresa líder a nivel nacional en la provisión de bienes y servicios
-            tecnológicos, distinguiéndonos por la innovación, la calidad y el compromiso con la excelencia.
-            Aspiramos a ser el socio estratégico preferido de nuestros clientes, anticipándonos a sus
-            necesidades y contribuyendo a su transformación digital y competitividad en el mercado.
-          </p>
-          <p>
-            Buscamos crecer de manera sostenible, fortaleciendo nuestra presencia en el sector y promoviendo
-            relaciones de confianza y valor a largo plazo.
-          </p>
-        </div>
-        <div class="image-content">
-          <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            alt="Nuestra visión"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Mision y Vision End -->
 
     <!-- Servicios Start -->
     <div class="container-fluid py-4" id="servicios">
@@ -179,7 +196,7 @@
                     <i class="fa fa-headset"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Soporte TI</h5>
+                    <h5>Servicios TI</h5>
                     <p><i class="fa fa-check-circle"></i> Soporte a usuario final</p>
                     <p><i class="fa fa-check-circle"></i> Soporte TI por bolsa de tickets</p>
                     <p><i class="fa fa-check-circle"></i> Tickets a demanda a nivel nacional</p>

@@ -154,3 +154,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+//Script personalizado para las animaciones
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("inicioCarousel");
+
+  // Reiniciar animaciones al cambiar de slide
+  carousel.addEventListener("slide.bs.carousel", function (e) {
+    const nextSlide = e.relatedTarget;
+    const elements = nextSlide.querySelectorAll(".fadeIn1");
+
+    elements.forEach((el) => {
+      el.style.animation = "none";
+      setTimeout(() => {
+        el.style.animation = "";
+      }, 10);
+    });
+  });
+});
