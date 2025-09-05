@@ -62,6 +62,11 @@ h6,
     padding: 10px 0;
   }
 }
+@media (min-width: 1600px) {
+  .navbar {
+    height: 95px;
+  }
+}
 
 @media (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -345,7 +350,7 @@ html {
 .service-3d-container {
   perspective: 1500px;
   margin-bottom: 30px;
-  height: 430px; /* Altura fija para todas las tarjetas */
+  height: 450px; /* Altura fija para todas las tarjetas */
 }
 
 .service-card {
@@ -816,6 +821,7 @@ html {
   }
 }
 
+/* Estilos para la pagina de proyectos */
 .project-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 5rem 0;
@@ -957,7 +963,7 @@ html {
   font-size: 0.95rem;
 }
 
-/* Estilos para el carrusel - AJUSTES DE TAMAÑO Y CENTRADO */
+/* Estilos para el carrusel projectos- AJUSTES DE TAMAÑO Y CENTRADO */
 .gallery-section {
   padding: 2rem 0;
   background: white;
@@ -993,35 +999,26 @@ html {
 }
 
 /* Ajuste del tamaño del carrusel */
-.carousel-item {
+.carousel-item1 {
   height: 400px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-item img {
+.carousel-item1 img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.carousel-caption {
-  background: rgba(20, 24, 62, 0.85);
-  padding: 15px;
-  border-radius: 8px;
-  max-width: 80%;
-  margin: 0 auto;
-  bottom: 20px;
-}
-
 /* Ajustes responsivos para el carrusel */
 @media (max-width: 992px) {
-  .carousel-item {
+  .carousel-item1 {
     height: 280px;
   }
 
-  .carousel-container {
+  .carousel-container1 {
     max-width: 90%;
   }
 }
@@ -1031,7 +1028,7 @@ html {
     margin-top: 2rem;
   }
 
-  .carousel-item {
+  .carousel-item1 {
     height: 250px;
   }
 
@@ -1044,19 +1041,6 @@ html {
     height: 40px;
     font-size: 1rem;
   }
-
-  .carousel-caption {
-    padding: 10px;
-    bottom: 15px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 1rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 576px) {
@@ -1065,33 +1049,17 @@ html {
     padding: 3rem 0;
   }
 
-  .carousel-item {
+  .carousel-item1 {
     height: 200px;
-  }
-
-  .carousel-caption {
-    bottom: 10px;
-    padding: 8px;
-    max-width: 90%;
-  }
-
-  .carousel-caption h5 {
-    font-size: 0.9rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.7rem;
-    margin-bottom: 0;
   }
 }
 
-/* Inicio espacio completo */
-.carousel-inner {
+/* Estilos carusel incio */
+.carousel-inner1 {
   min-height: 100vh;
 }
 
-.carousel-item {
+.carousel-item2 {
   min-height: 100vh;
   background: no-repeat center center;
   background-size: cover;
@@ -1099,7 +1067,7 @@ html {
 }
 
 /* Overlay para mejorar la legibilidad del texto */
-.carousel-item::before {
+.carousel-item2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1109,7 +1077,7 @@ html {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.carousel-item .container {
+.carousel-item2 .container {
   position: relative;
   z-index: 1;
   padding-top: 40vh;
@@ -1225,8 +1193,8 @@ html {
 }
 
 .image-content img {
-  width: 90%;
-  height: 100%;
+  width: 75%;
+  height: 90%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -1319,4 +1287,95 @@ html {
 
 .navbar-transparent .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-logo {
+  /* Tamaño base para escritorio */
+  height: 71px;
+  object-fit: contain;
+  transition: all 0.3s ease; /* Transición suave para cambios de tamaño */
+}
+@media (min-width: 1600px) {
+  .navbar-logo {
+    height: 90px;
+  }
+}
+/* Tabletas en orientación horizontal y pantallas más pequeñas */
+@media (max-width: 992px) {
+  .navbar-logo {
+    height: 60px;
+  }
+}
+
+/* Tabletas en orientación vertical */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 50px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 45px;
+  }
+}
+
+/*Responsividad para iconos de servicios */
+/* Ajustes para tablets */
+@media (max-width: 991.98px) {
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 767.98px) {
+  .service-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 575.98px) {
+  .service-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+/*Espacio para titulos de Apertura e Implementacion*/
+.espacio3 {
+  margin-top: 20px;
+}
+@media (min-width: 1600px) {
+  .espacio3 {
+    margin-top: 40px;
+  }
+}
+
+/* Espacio entre cabezera y subsecciones de aperturas, renovaciones e implementaciones */
+.espacio4 {
+  margin-top: 3rem;
+}
+@media (min-width: 1600px) {
+  .espacio4 {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  .tamaño {
+    font-size: 4rem;
+  }
 }

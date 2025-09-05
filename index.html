@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="img/Logo.png" alt="Logo" style="height: 71px; object-fit: contain" />
+          <img src="img/Logo.png" alt="Logo" class="navbar-logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
               <a class="nav-link" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#beneficios">Beneficios</a>
+              <a class="nav-link" href="#beneficios">Homologacion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#clientes">Clientes</a>
@@ -80,13 +80,16 @@
         <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#inicioCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
 
       <!-- Contenido del carrusel -->
-      <div class="carousel-inner">
+      <div class="carousel-inner carousel-inner1">
         <!-- Slide 1 -->
         <div
-          class="carousel-item active"
+          class="carousel-item carousel-item2 active"
           style="
             background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
           "
@@ -94,16 +97,14 @@
           <div class="container">
             <div class="row g-5 align-items-center">
               <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
-                <h1 class="mb-4 text-white">Soluciones Tecnológicas a tu medida</h1>
-                <p class="lead text-white">Desarrollamos software personalizado para optimizar tus procesos empresariales.</p>
+                <h1 class="mb-4 tamaño text-white">Soluciones Tecnológicas a tu medida</h1>
               </div>
             </div>
           </div>
         </div>
 
-        <!--
         <div
-          class="carousel-item"
+          class="carousel-item carousel-item2"
           style="
             background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
           "
@@ -111,24 +112,51 @@
           <div class="container">
             <div class="row g-5 align-items-center">
               <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
-                <h1 class="mb-4 text-white">Desarrollo Web y Móvil</h1>
-                <p class="lead text-white">Creamos aplicaciones modernas y responsivas para todos los dispositivos.</p>
+                <h1 class="mb-4 tamaño text-white">Mesa de Ayuda</h1>
               </div>
             </div>
           </div>
         </div>
 
-        
-        <div class="carousel-item" style="background-image: url('img/nosotros.png')">
+        <div class="carousel-item carousel-item2" style="background-image: url('img/nosotros.png')">
           <div class="container">
             <div class="row g-5 align-items-center">
               <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
-                <h1 class="mb-4 text-white">Infraestructura Cloud</h1>
-                <p class="lead text-white">Implementamos soluciones en la nube para mayor escalabilidad y seguridad.</p>
+                <h1 class="mb-4 tamaño text-white">Soporte TI</h1>
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
+
+        <div class="carousel-item carousel-item2" style="background-image: url('img/Slider1.png')">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 tamaño text-white">Soporte TI</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-item2" style="background-image: url('img/Slider2.png')">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 tamaño text-white">Soporte TI</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-item2" style="background-image: url('img/Slider3.png')">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 fadeIn1" data-wow-delay="0.5s">
+                <h1 class="mb-4 tamaño text-white">Soporte TI</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Controles de navegación -->
@@ -157,12 +185,13 @@
                     <i class="fa fa-headset"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Servicios TI</h5>
-                    <p><i class="fa fa-check-circle"></i> Soporte a usuario final</p>
-                    <p><i class="fa fa-check-circle"></i> Soporte TI por bolsa de tickets</p>
-                    <p><i class="fa fa-check-circle"></i> Tickets a demanda a nivel nacional</p>
-                    <p><i class="fa fa-check-circle"></i> Servicio de soporte a puntos de venta</p>
-                    <p><i class="fa fa-check-circle"></i>Migración de estaciones de trabajo con respaldo de data</p>
+                    <h5>Infraestructura y Soporte TI</h5>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico remoto a nivel nacional</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico onsite a nivel nacional</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico N1, N2 y N3</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico a puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> Cableado estructurado y electrico</p>
+                    <p><i class="fa fa-check-circle"></i>Migración de estaciones de trabajo</p>
                   </div>
                 </div>
                 <div class="card-back">
@@ -170,11 +199,13 @@
                     <i class="fa fa-headset"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Soporte TI</h5>
-                    <p><i class="fa fa-check-circle"></i> Servicio de implementación y soporte para aperturas de sucursales</p>
-                    <p><i class="fa fa-check-circle"></i> Servicio de Cableado estructurado</p>
-                    <p><i class="fa fa-check-circle"></i> Soporte remoto y presencial</p>
-                    <p><i class="fa fa-check-circle"></i> Traslado de equipos</p>
+                    <h5>Infraestructura y Soporte TI</h5>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico remoto a nivel nacional</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico onsite a nivel nacional</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico N1, N2 y N3</p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico a puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> Cableado estructurado y electrico</p>
+                    <p><i class="fa fa-check-circle"></i>Migración de estaciones de trabajo</p>
                   </div>
                 </div>
               </div>
@@ -190,7 +221,7 @@
                   </div>
                   <div class="service-content">
                     <h5>Mesa de Ayuda</h5>
-                    <p><i class="fa fa-check-circle"></i> Recepción y registro de incidencias y solicitudes</p>
+                    <p><i class="fa fa-check-circle"></i> Recepción, registro de incidencias y solicitudes</p>
                     <p><i class="fa fa-check-circle"></i> Atención remota de incidencias</p>
                     <p><i class="fa fa-check-circle"></i> Gestion de tickets</p>
                     <p><i class="fa fa-check-circle"></i> Escalado y seguimiento</p>
@@ -224,12 +255,12 @@
                     <i class="fa fa-wrench"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Mantenimiento</h5>
-                    <p><i class="fa fa-check-circle"></i> Mantenimiento preventivo y correctivo</p>
-                    <p><i class="fa fa-check-circle"></i> Pockets CK3R, Honeywell u otros</p>
-                    <p><i class="fa fa-check-circle"></i> Impresoras láser, térmicas, matriciales y otros</p>
-                    <p><i class="fa fa-check-circle"></i> Cajas registradoras y complementos</p>
-                    <p><i class="fa fa-check-circle"></i> Computadoras y servidores</p>
+                    <h5>Mantenimiento preventivo y correctivo</h5>
+                    <p><i class="fa fa-check-circle"></i> Mantenimiento de equipos tecnológicos:</p>
+                    <p><i class="fa fa-check-circle"></i> Computadoras, laptops y servidores</p>
+                    <p><i class="fa fa-check-circle"></i> Gavinetes, Switch y puntos de ventas</p>
+                    <p><i class="fa fa-check-circle"></i> Impresoras láser, térmicas y matriciales</p>
+                    <p><i class="fa fa-check-circle"></i> Pockets CK3R, Honeywell y otros</p>
                   </div>
                 </div>
                 <div class="card-back">
@@ -237,12 +268,12 @@
                     <i class="fa fa-wrench"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Mantenimiento</h5>
-                    <p><i class="fa fa-check-circle"></i> Mantenimiento preventivo y correctivo</p>
-                    <p><i class="fa fa-check-circle"></i> Pockets CK3R, Honeywell u otros</p>
-                    <p><i class="fa fa-check-circle"></i> Impresoras láser, térmicas, matriciales y otros</p>
-                    <p><i class="fa fa-check-circle"></i> Cajas registradoras y complementos</p>
-                    <p><i class="fa fa-check-circle"></i> Computadoras y servidores</p>
+                    <h5>Mantenimiento preventivo y correctivo</h5>
+                    <p><i class="fa fa-check-circle"></i> Mantenimiento de equipos tecnológicos:</p>
+                    <p><i class="fa fa-check-circle"></i> Computadoras, laptops y servidores</p>
+                    <p><i class="fa fa-check-circle"></i> Gavinetes, Switch y puntos de ventas</p>
+                    <p><i class="fa fa-check-circle"></i> Impresoras láser, térmicas y matriciales</p>
+                    <p><i class="fa fa-check-circle"></i> Pockets CK3R, Honeywell y otros</p>
                   </div>
                 </div>
               </div>
@@ -260,11 +291,10 @@
                     <i class="fa fa-certificate"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Certificación</h5>
-                    <p><i class="fa fa-check-circle"></i> Servicio de certificacion e implementacion de las nuevas:</p>
-                    <p><i class="fa fa-check-circle"></i> TARJETA OH!, OH! QR</p>
-                    <p><i class="fa fa-check-circle"></i> AGORA y AGORA QR</p>
-                    <p><i class="fa fa-check-circle"></i> Proyectos de validación de tarjetas multimarca en los Retail a nivel nacional</p>
+                    <h5>Certificación de Puntos de Venta</h5>
+                    <p><i class="fa fa-check-circle"></i> Certificacion e implementacion de nuevos productos para puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> certificacion en QA de nuevos productos para puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> Proyectos de validación de tarjetas multimarca a nivel nacional</p>
                   </div>
                 </div>
                 <div class="card-back">
@@ -272,11 +302,10 @@
                     <i class="fa fa-laptop"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Certificación</h5>
-                    <p><i class="fa fa-check-circle"></i> Servicio de certificacion e implementacion de las nuevas:</p>
-                    <p><i class="fa fa-check-circle"></i> TARJETA OH!, OH! QR</p>
-                    <p><i class="fa fa-check-circle"></i> AGORA y AGORA QR</p>
-                    <p><i class="fa fa-check-circle"></i> Proyectos de validación de tarjetas multimarca en los Retail a nivel nacional</p>
+                    <h5>Certificación de Puntos de Venta</h5>
+                    <p><i class="fa fa-check-circle"></i> Certificacion e implementacion de nuevos productos para puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> certificacion en QA de nuevos productos para puntos de venta</p>
+                    <p><i class="fa fa-check-circle"></i> Proyectos de validación de tarjetas multimarca a nivel nacional</p>
                   </div>
                 </div>
               </div>
@@ -291,12 +320,14 @@
                     <i class="fa fa-store"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Apertura y Renovaciones</h5>
-                    <p><i class="fa fa-check-circle"></i> Soporte a nuevas estaciones</p>
-                    <p><i class="fa fa-check-circle"></i> Renovación de equipos</p>
-                    <p><i class="fa fa-check-circle"></i> Optimización de puntos</p>
-                    <p><i class="fa fa-check-circle"></i> Tiendas y estaciones de trabajo</p>
-                    <p><i class="fa fa-check-circle"></i> Renovación de puntos de venta</p>
+                    <h5>Apertura, Implementacion y Renovacion</h5>
+                    <p>
+                      <i class="fa fa-check-circle"></i> Soporte modalidad llave en mano para nuevas aperturas de oficinas, tiendas por departamento,
+                      etc.
+                    </p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico para nuevas Implementaciones onsite</p>
+                    <p><i class="fa fa-check-circle"></i> Renovación de equipos tecnologicos con respaldo de informacion</p>
+                    <p><i class="fa fa-check-circle"></i> Traslado de equipos informaticos</p>
                   </div>
                 </div>
                 <div class="card-back">
@@ -304,12 +335,14 @@
                     <i class="fa fa-store"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Apertura y Renovaciones</h5>
-                    <p><i class="fa fa-check-circle"></i> Soporte a nuevas estaciones</p>
-                    <p><i class="fa fa-check-circle"></i> Renovación de equipos</p>
-                    <p><i class="fa fa-check-circle"></i> Optimización de puntos</p>
-                    <p><i class="fa fa-check-circle"></i> Tiendas y estaciones de trabajo</p>
-                    <p><i class="fa fa-check-circle"></i> Renovación de puntos de venta</p>
+                    <h5>Apertura, Implementaciones y Renovaciones</h5>
+                    <p>
+                      <i class="fa fa-check-circle"></i> Soporte modalidad llave en mano para nuevas aperturas de oficinas, tiendas por departamento,
+                      etc.
+                    </p>
+                    <p><i class="fa fa-check-circle"></i> Soporte tecnico para nuevas Implementaciones onsite</p>
+                    <p><i class="fa fa-check-circle"></i> Renovación de equipos tecnologicos con respaldo de informacion</p>
+                    <p><i class="fa fa-check-circle"></i> Traslado de equipos informaticos</p>
                   </div>
                 </div>
               </div>
@@ -324,13 +357,10 @@
                     <i class="fa fa-laptop"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Venta y Alquiler</h5>
-                    <p><i class="fa fa-check-circle"></i>Computadoras y servidores</p>
-                    <p><i class="fa fa-check-circle"></i> Impresoras y laptops</p>
-                    <p><i class="fa fa-check-circle"></i> Suministros informáticos</p>
-                    <p><i class="fa fa-check-circle"></i> Venta de licencias, antivirus y otros</p>
-                    <p><i class="fa fa-check-circle"></i> Estabilizadores</p>
-                    <p><i class="fa fa-check-circle"></i> Switch</p>
+                    <h5>Venta y Alquiler de equipos tecnologicos</h5>
+                    <p><i class="fa fa-check-circle"></i>Computadoras, laptops y servidores</p>
+                    <p><i class="fa fa-check-circle"></i> Impresoras laser, termicas y matriciales</p>
+                    <p><i class="fa fa-check-circle"></i> Suministros informáticos, licencias de microsoft, windows y antivirus</p>
                   </div>
                 </div>
                 <div class="card-back">
@@ -338,12 +368,10 @@
                     <i class="fa fa-certificate"></i>
                   </div>
                   <div class="service-content">
-                    <h5>Venta y Alquiler</h5>
-                    <p><i class="fa fa-check-circle"></i> Estabilizadores</p>
-                    <p><i class="fa fa-check-circle"></i> Switch</p>
-                    <p><i class="fa fa-check-circle"></i> Cintas, tóner, ribbon</p>
-                    <p><i class="fa fa-check-circle"></i> Discos duros y memorias</p>
-                    <p><i class="fa fa-check-circle"></i> Adaptadores y cables</p>
+                    <h5>Venta y Alquiler de equipos tecnologicos</h5>
+                    <p><i class="fa fa-check-circle"></i>Computadoras, laptops y servidores</p>
+                    <p><i class="fa fa-check-circle"></i> Impresoras laser, termicas y matriciales</p>
+                    <p><i class="fa fa-check-circle"></i> Suministros informáticos, licencias de microsoft, windows y antivirus</p>
                   </div>
                 </div>
               </div>
