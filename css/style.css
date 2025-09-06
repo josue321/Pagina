@@ -21,11 +21,6 @@ h6,
 }
 
 /*** Navbar ***/
-.sticky-top {
-  top: -150px;
-  transition: 0.5s;
-}
-
 .navbar {
   height: 75px;
 }
@@ -296,23 +291,30 @@ html {
   transform: translateY(-5px);
 }
 
-/* Tarjeta 1 - Tienda Huaral */
+/* Tarjeta 1 - Oeschle */
 .card-1 .front {
-  background: url("../img/apertura.jpeg") center/cover;
+  background: url("../img/OechsleAP.png") center/cover;
 }
-
 .card-1 .back {
-  background: url("../img/apertura.jpeg") center/cover;
+  background: url("../img/OechsleAP.png") center/cover;
   transform: rotateY(180deg);
 }
 
-/* Tarjeta 2 - Productos Nuevos */
+/* Tarjeta 2 - Makro */
 .card-2 .front {
   background: url("../img/MakroSJM.jpeg") center/cover;
 }
-
 .card-2 .back {
   background: url("../img/MakroSJM.jpeg") center/cover;
+  transform: rotateY(180deg);
+}
+
+/* Tarjeta 3 - Makro */
+.card-3 .front {
+  background: url("../img/apertura.jpeg") center/cover;
+}
+.card-3 .back {
+  background: url("../img/apertura.jpeg") center/cover;
   transform: rotateY(180deg);
 }
 
@@ -1377,5 +1379,29 @@ html {
   }
   .tamaño {
     font-size: 4rem;
+  }
+}
+
+/*Imagen barra final*/
+.logo {
+  width: 90%;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .mobile-visible {
+    text-align: center !important;
+    display: block !important;
+    margin-top: 20px;
   }
 }

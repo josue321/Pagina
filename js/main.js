@@ -4,15 +4,6 @@
   // Initiate the wowjs
   new WOW().init();
 
-  // Sticky Navbar
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $(".sticky-top").addClass("bg-primary shadow-sm").css("top", "0px");
-    } else {
-      $(".sticky-top").removeClass("bg-primary shadow-sm").css("top", "-150px");
-    }
-  });
-
   // Facts counter
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
