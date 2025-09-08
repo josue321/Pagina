@@ -163,3 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const fabToggle = document.getElementById("fabToggle");
+const fabActions = document.getElementById("fabActions");
+
+fabToggle.addEventListener("click", () => {
+  fabActions.classList.toggle("show");
+});
