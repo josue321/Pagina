@@ -1417,10 +1417,6 @@ html {
   .tamaño1 {
     font-size: 2rem;
   }
-  .col-lg-6 {
-    flex: 0 0 auto;
-    width: 66.6666666667%;
-  }
 }
 
 /*Imagen barra final*/
@@ -1444,5 +1440,17 @@ html {
     text-align: center !important;
     display: block !important;
     margin-top: 20px;
+  }
+}
+
+.columna {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+@media (min-width: 1600px) {
+  .columna {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
   }
 }
