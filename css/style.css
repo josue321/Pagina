@@ -211,6 +211,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 15px; /* separación entre botones */
 }
 
 /* Botón principal */
@@ -231,26 +232,6 @@ html {
 
 .fab-button:hover {
   transform: scale(1.1);
-}
-
-/* Acciones (ocultas por defecto) */
-.fab-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 0.3s ease;
-}
-
-/* Mostrar acciones */
-.fab-actions.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
 }
 
 /* Botones secundarios */
@@ -276,10 +257,6 @@ html {
   background-color: #25d366;
 }
 
-.fab-action.gmail {
-  background-color: #d93025;
-}
-
 .fab-action.outlook {
   background-color: #0072c6;
 }
@@ -296,10 +273,6 @@ html {
     width: 45px;
     height: 45px;
     font-size: 20px;
-  }
-
-  .fab-actions {
-    gap: 12px;
   }
 }
 
@@ -433,7 +406,7 @@ html {
 }
 .espacio2 {
   padding-top: 1rem !important;
-  padding-bottom: 3rem !important;
+  padding-bottom: 2rem !important;
 }
 
 /* Estilos para las tarjetas giratorias */
@@ -1452,5 +1425,28 @@ html {
   .columna {
     flex: 0 0 auto;
     width: 66.6666666667%;
+  }
+}
+@media (max-width: 576px) {
+  .columna {
+    flex: 0 0 auto;
+    width: 90%;
+  }
+}
+.columna2 {
+  flex: 0 0 auto;
+  width: 60%;
+}
+
+@media (min-width: 1600px) {
+  .columna2 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+}
+@media (max-width: 576px) {
+  .columna2 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }

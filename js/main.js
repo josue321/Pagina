@@ -129,6 +129,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarCollapse = document.getElementById("navbarNav");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Solo cierra en dispositivos móviles (cuando el menú está visible)
+      if (navbarCollapse.classList.contains("show")) {
+        new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+    });
+  });
+});
 
 //transparencia solo en index
 document.addEventListener("DOMContentLoaded", function () {
@@ -136,13 +149,19 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
     const navbar = document.querySelector(".navbar");
 
-    window.addEventListener("scroll", function () {
+    function actualizarNavbar() {
       if (window.scrollY > 50) {
         navbar.classList.remove("navbar-transparent");
       } else {
         navbar.classList.add("navbar-transparent");
       }
-    });
+    }
+
+    // Ejecutar al cargar la página
+    actualizarNavbar();
+
+    // Ejecutar al hacer scroll
+    window.addEventListener("scroll", actualizarNavbar);
   }
 });
 
