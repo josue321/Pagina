@@ -1379,7 +1379,9 @@ html {
     margin-top: 5rem;
   }
 }
-
+.tamaño {
+  font-size: 3rem;
+}
 @media (min-width: 1600px) {
   .nav-link {
     font-size: 1.3rem;
@@ -1399,6 +1401,9 @@ html {
 }
 
 @media (max-width: 576px) {
+  .tamaño {
+    font-size: 2.5rem;
+  }
   .logo {
     width: 50%;
     margin-bottom: 0;
@@ -1435,7 +1440,7 @@ html {
 }
 .columna2 {
   flex: 0 0 auto;
-  width: 60%;
+  width: 55%;
 }
 
 @media (min-width: 1600px) {
@@ -1444,6 +1449,7 @@ html {
     width: 66.6666666667%;
   }
 }
+
 @media (max-width: 576px) {
   .columna2 {
     flex: 0 0 auto;
